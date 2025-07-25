@@ -24,13 +24,13 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-informational?style=flat&logo=linkedin&logoColor=white&color=0A66C2)](https://www.linkedin.com/in/jason-trinh-4590a8315)
 
 ## 📄 Resume
-> 📎 [View PDF version](https://github.com/jaizunT/jaizunT.github.io/blob/main/Resume%207-25-27_img.jpg)
+> 📎 [View PDF version](https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/Resume%207-25-27_img.jpg)
 
 <details>
   <summary>Click to view embedded image</summary>
 
   <p align="center">
-    <img src="https://github.com/jaizunT/jaizunT.github.io/blob/main/Resume%207-25-27_img.jpg" alt="Resume" width="70%">
+    <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/Resume%207-25-27_img.jpg" alt="Resume" width="70%">
   </p>
 </details>
 
@@ -38,12 +38,14 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
 
 I built a game you can try out — no installation needed beyond Java!
 
-> 📥 [Click here to download the game (.jar)](https://github.com/jaizunT/jaizunT.github.io/blob/main/byow-game.jar)
+> 📥 [Click here to download the game (.jar)](https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/byow-game.jar)
 
 To play:
+
 1. Make sure you have Java installed (JDK or JRE).
 2. Download the `.jar` file from the link above.
-3. Open your terminal and run:
+3. Open a terminal and navigate to the download location.
+4. Run the following command:
 
 ```bash
-java -jar MyGame.jar
+java -jar byow-game.jar
