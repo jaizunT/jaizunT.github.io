@@ -66,26 +66,27 @@ java -jar byow-game.jar
 </details>
 
 <details>
-  <summary>How to Play</summary>
+  <summary>📘 How to Play</summary>
 
-  - **Explore the world**
-  - **Find keys** scattered across the map and place them in "the zone"
-  - **Enter the portal** to win
-  - **Collect orbs** to use abilities
-  - **Avoid "the entity"**
+  **Objective**
+  - Explore the world
+  - Find keys scattered across the map and place them in "the zone"
+  - Enter the portal to win
+  - Collect orbs to use abilities
+  - Avoid "the entity"
 
-  **Main Menu:**
-  - `n`: New game (enter numeric seed, then press `s`)
+  **Main Menu**
+  - `n`: Start a new game (enter numeric seed, then press `s`)
   - `l`: Load game
   - `q`: Quit
 
-  **In Game:**
-  - Move: `w`, `a`, `s`, `d`
-  - `j`: Pick up / place key
-  - `k`: Dash (2 orbs)
-  - `m`: Teleport through wall (5 orbs; must be facing wall within 1 tile)
+  **In Game**
+  - Movement: `w`, `a`, `s`, `d`
+  - `j`: Pick up / place key (only one at a time)
+  - `k`: Dash (requires 2 orbs)
+  - `m`: Teleport through wall (requires 5 orbs, must be facing wall and within 1 tile)
 
-  **Other Keys:**
+  **Other Keys**
   - `z`: Toggle lights (cheat)
   - `x`: Show entity path
   - `v`: Save game
@@ -93,9 +94,11 @@ java -jar byow-game.jar
   - `r`: Restart
   - `:` then `q`: Quit
 
-  **HUD (Top Right):**
-  - Facing direction
-  - Keys placed
-  - Orbs collected
-  - Cursor tile
+  **HUD (Top Right)**
+  - Direction you're facing
+  - Number of keys placed
+  - Number of orbs collected
+  - Tile your cursor is over
+
 </details>
+
