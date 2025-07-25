@@ -49,3 +49,4 @@ To play:
 
 ```bash
 java -jar byow-game.jar
+```
