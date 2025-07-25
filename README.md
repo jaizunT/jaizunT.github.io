@@ -7,7 +7,7 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
 - 🎓 Education: University of California, Berkeley (EECS major)
 - 🌱 Learning: [What you're currently learning]
 - 🧠 Interested in: Machine learning, computer architecture, optimization, and theoretical statistics
-- 📫 How to reach me: [Email or preferred contact]
+- 📫 How to reach me: jasontrinh@berkeley.edu
 
 ## 📘 Coursework (UC Berkeley)
 
@@ -38,7 +38,7 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
 
 I built a game you can try out — no installation needed beyond Java!
 
-> 📥 [Click here to download the game (.jar)](https://github.com/jaizunT/jaizunT.github.io/raw/main/game/MyGame.jar)
+> 📥 [Click here to download the game (.jar)](https://github.com/jaizunT/jaizunT.github.io/blob/main/byow-game.jar)
 
 To play:
 1. Make sure you have Java installed (JDK or JRE).
