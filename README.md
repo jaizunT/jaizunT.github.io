@@ -34,7 +34,7 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
   </p>
 </details>
 
-## 🎮 Play My Game
+## 🎮 Play My Game - Lights Off
 
 I built a game you can try out — no installation needed beyond Java!
 
