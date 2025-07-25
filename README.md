@@ -33,3 +33,17 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
     <img src="https://github.com/jaizunT/jaizunT.github.io/blob/main/Resume%207-25-27_img.jpg" alt="Resume" width="70%">
   </p>
 </details>
+
+## 🎮 Play My Game
+
+I built a game you can try out — no installation needed beyond Java!
+
+> 📥 [Click here to download the game (.jar)](https://github.com/jaizunT/jaizunT.github.io/raw/main/game/MyGame.jar)
+
+To play:
+1. Make sure you have Java installed (JDK or JRE).
+2. Download the `.jar` file from the link above.
+3. Open your terminal and run:
+
+```bash
+java -jar MyGame.jar
