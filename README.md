@@ -40,7 +40,7 @@ I built a game you can try out — no installation needed beyond Java!
 
 > 📥 [Click here to download the game (.jar)](https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/byow-game.jar)
 
-To play:
+To run:
 
 1. Make sure you have Java installed (JDK or JRE).
 2. Download the `.jar` file from the link above.
@@ -50,3 +50,51 @@ To play:
 ```bash
 java -jar byow-game.jar
 ```
+<details>
+  <summary>🖼️ Click to view game screenshot</summary>
+
+  <p align="center">
+    <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/game-screenshot.png" target="_blank">
+      <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/game-screenshot.png" alt="Lights Off Game Screenshot" width="80%">
+    </a>
+  </p>
+
+</details>
+
+<details>
+  <summary>How to Play</summary>
+
+  - **Explore the world**
+  - **Find the keys** scattered across the map, place them in "the zone", and find the way out through the **portal**
+  - **Collect orbs** to use abilities
+  - **Avoid "the entity"**
+
+  ### 🕹️ Controls
+
+  #### Main Menu:
+  - `n`: New game — enter a numeric seed followed by `s`
+  - `l`: Load previous game state
+  - `q`: Quit
+
+  #### In Game:
+  - Movement: `w`, `a`, `s`, `d`
+  - Abilities:
+    - `k`: Dash (2 orbs, in current direction)
+    - `m`: Teleport through walls (5 orbs, must be 1 tile away from wall and facing it)
+  - Interactions:
+    - `j`: Pick up/place key (only one key can be carried)
+  - Utilities:
+    - `z`: Toggle lights (cheat)
+    - `x`: Show entity path
+    - `v`: Save game state
+    - `l`: Load game state
+    - `r`: Restart
+    - `:` then `q`: Quit
+
+  #### HUD (Top Right):
+  - Current direction facing
+  - Number of keys placed
+  - Number of orbs collected
+  - Tile currently under cursor
+
+</details>
