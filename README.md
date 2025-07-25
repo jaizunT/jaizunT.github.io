@@ -54,8 +54,8 @@ java -jar byow-game.jar
   <summary>🖼️ Click to view game screenshot</summary>
 
   <p align="center">
-    <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/blob/main/game_preview.png" target="_blank">
-      <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/blob/main/game_preview.png" alt="Lights Off Game Screenshot" width="80%">
+    <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/game_preview.png" target="_blank">
+      <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/game_preview.png" alt="Lights Off Game Screenshot" width="80%">
     </a>
   </p>
 
