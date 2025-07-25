@@ -67,38 +67,46 @@ java -jar byow-game.jar
 
 <details>
   <summary>📘 How to Play</summary>
+  <br />
+  <strong>Objective</strong>
+  <ul>
+    <li>Explore the world</li>
+    <li>Find keys scattered across the map and place them in "the zone"</li>
+    <li>Enter the portal to win</li>
+    <li>Collect orbs to use abilities</li>
+    <li>Avoid "the entity"</li>
+  </ul>
 
-  **Objective**
-  - Explore the world
-  - Find keys scattered across the map and place them in "the zone"
-  - Enter the portal to win
-  - Collect orbs to use abilities
-  - Avoid "the entity"
+  <strong>Main Menu</strong>
+  <ul>
+    <li><code>n</code>: Start a new game (enter numeric seed, then press <code>s</code>)</li>
+    <li><code>l</code>: Load game</li>
+    <li><code>q</code>: Quit</li>
+  </ul>
 
-  **Main Menu**
-  - `n`: Start a new game (enter numeric seed, then press `s`)
-  - `l`: Load game
-  - `q`: Quit
+  <strong>In Game</strong>
+  <ul>
+    <li>Movement: <code>w</code>, <code>a</code>, <code>s</code>, <code>d</code></li>
+    <li><code>j</code>: Pick up / place key (only one at a time)</li>
+    <li><code>k</code>: Dash (requires 2 orbs)</li>
+    <li><code>m</code>: Teleport through wall (requires 5 orbs, must be facing wall and within 1 tile)</li>
+  </ul>
 
-  **In Game**
-  - Movement: `w`, `a`, `s`, `d`
-  - `j`: Pick up / place key (only one at a time)
-  - `k`: Dash (requires 2 orbs)
-  - `m`: Teleport through wall (requires 5 orbs, must be facing wall and within 1 tile)
+  <strong>Other Keys</strong>
+  <ul>
+    <li><code>z</code>: Toggle lights (cheat)</li>
+    <li><code>x</code>: Show entity path</li>
+    <li><code>v</code>: Save game</li>
+    <li><code>l</code>: Load game</li>
+    <li><code>r</code>: Restart</li>
+    <li><code>:</code> then <code>q</code>: Quit</li>
+  </ul>
 
-  **Other Keys**
-  - `z`: Toggle lights (cheat)
-  - `x`: Show entity path
-  - `v`: Save game
-  - `l`: Load game
-  - `r`: Restart
-  - `:` then `q`: Quit
-
-  **HUD (Top Right)**
-  - Direction you're facing
-  - Number of keys placed
-  - Number of orbs collected
-  - Tile your cursor is over
-
+  <strong>HUD (Top Right)</strong>
+  <ul>
+    <li>Direction you're facing</li>
+    <li>Number of keys placed</li>
+    <li>Number of orbs collected</li>
+    <li>Tile your cursor is over</li>
+  </ul>
 </details>
-
