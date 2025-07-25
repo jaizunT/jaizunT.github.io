@@ -15,4 +15,4 @@ I'm a [Your Role or Field] with experience in [Key Skills or Industries]. I enjo
 ## 📄 Resume
 ![Resume](https://github.com/jaizunT/jaizunT.github.io/blob/main/Resume%207-25-27_img.jpg)
 
-> Or view the PDF version [here](https://yourdomain.com/path/to/resume.pdf)
+> Or view the PDF version [here](https://github.com/jaizunT/jaizunT.github.io/blob/main/Resume%207-25-27_img.jpg)
