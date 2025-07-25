@@ -1,4 +1,4 @@
-# 👋 Hi, I'm [Your Name]
+# 👋 Hi, I'm Jason Trinh
 
 ## 🌟 About Me
 I'm a [Your Role or Field] with experience in [Key Skills or Industries]. I enjoy building [what you like to build], exploring [fields of interest], and solving problems using [your tools or skills].
