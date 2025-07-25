@@ -13,6 +13,6 @@ I'm a [Your Role or Field] with experience in [Key Skills or Industries]. I enjo
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/jason-trinh-4590a8315)
 
 ## 📄 Resume
+> Or view the PDF version [here](https://github.com/jaizunT/jaizunT.github.io/blob/main/Resume%207-25-27_img.jpg)
 ![Resume](https://github.com/jaizunT/jaizunT.github.io/blob/main/Resume%207-25-27_img.jpg)
 
-> Or view the PDF version [here](https://github.com/jaizunT/jaizunT.github.io/blob/main/Resume%207-25-27_img.jpg)
