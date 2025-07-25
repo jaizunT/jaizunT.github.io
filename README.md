@@ -8,8 +8,9 @@
 I'm a student at the University of California, Berkeley, majoring in Electrical Engineering and Computer Sciences (EECS). I'm passionate about a broad range of fields across computing and applied mathematics—including machine learning, computer architecture, optimization, and theoretical statistics. I enjoy building systems, solving technical challenges, and exploring how theory connects with real-world engineering.
 
 <!--- - 💼 Currently working on: [Your Project or Goal] -->
-- 🎓 Education: University of California, Berkeley (EECS major)
-- 🌱 Learning: Machine Learning and Computer Vision
+- 🎓 Education: University of California, Berkeley (Grade: 4.0)
+- 💻 Major: Electrical Engineering and Computer Science (EECS)
+- 🌱 Grade: 4.0
 - 🧠 Interested in: Machine learning, computer architecture, optimization, and theoretical statistics
 - 📫 How to reach me: jasontrinh@berkeley.edu
 
