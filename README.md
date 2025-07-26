@@ -20,6 +20,7 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
 | CS 70       | Discrete Mathematics and Probability Theory           |  A+   |
 | EECS 126    | Probability and Random Processes                      |   A   |
 | EECS 127    | Optimization Models in Engineering                    |   A   |
+| CS 61C      | Great Ideas in Computer Architecture (Machine Structures) |       |
 
 ## 🔗 Connect with Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-informational?style=flat&logo=linkedin&logoColor=white&color=0A66C2)](https://www.linkedin.com/in/jason-trinh-4590a8315)
