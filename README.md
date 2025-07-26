@@ -28,7 +28,7 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
 > 📎 [View PDF version](https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/Resume%207-25-27_img.jpg)
 
 <details>
-  <summary>Click to view embedded image</summary>
+  <summary>Click to view image</summary>
 
   <p align="center">
     <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/Resume%207-25-27_img.jpg" alt="Resume" width="70%">
