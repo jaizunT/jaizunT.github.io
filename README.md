@@ -107,3 +107,17 @@ java -jar byow-game.jar
     <li>Tile your cursor is over</li>
   </ul>
 </details>
+
+## 🧪 Visualizing Quantum Systems
+
+Here's a visualization of an electron's probability density evolving in a 2D lattice structure. The simulation was computed by evolving the wavefunction over time using a Hamiltonian matrix, leveraging linear algebra techniques to capture quantum behavior on a discrete spatial grid.
+
+<details>
+  <summary>🌀 Click to view quantum probability density GIF</summary>
+  <br />
+  <p align="center">
+    <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/electron.gif" target="_blank">
+      <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/electron.gif" alt="Electron Density in 2D Lattice" width="70%">
+    </a>
+  </p>
+</details>
