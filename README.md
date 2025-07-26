@@ -125,7 +125,7 @@ Here's a visualization of an electron's probability density evolving in a 2D lat
 
 ## 🗣️ Speech Classifier Visualization
 
-This section showcases visualizations used in a speech classification lab. The first plot is a spectrogram representing time-frequency features of spoken audio. The second plot shows clustered embeddings of the processed signals.
+This section showcases visualizations used in a speech classifier. The first plot is a spectrogram representing time-frequency features of spoken audio. The second plot shows clustered embeddings of the processed signals.
 
 <details>
   <summary>📊 Click to view spectrogram and clustering plots</summary>
