@@ -122,3 +122,23 @@ Here's a visualization of an electron's probability density evolving in a 2D lat
     </a>
   </p>
 </details>
+
+## 🗣️ Speech Classifier Visualization
+
+This section showcases visualizations used in a speech classification task. The first plot is a spectrogram representing time-frequency features of spoken audio. The second plot shows clustered embeddings of the processed signals.
+
+<details>
+  <summary>📊 Click to view spectrogram and clustering plots</summary>
+  <br />
+  <p align="center">
+    <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/spectrogram.png" target="_blank">
+      <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/spectrogram.png" alt="Spectrogram" width="80%">
+    </a>
+  </p>
+
+  <p align="center">
+    <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/cluster.png" target="_blank">
+      <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/cluster.png" alt="Embedding Clusters" width="80%">
+    </a>
+  </p>
+</details>
