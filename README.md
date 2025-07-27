@@ -1,16 +1,16 @@
 # Jason Trinh
 
-## 🌟 About Me
+## About Me
 I'm a student at the University of California, Berkeley, majoring in Electrical Engineering and Computer Sciences (EECS). I'm passionate about a broad range of fields across computing and applied mathematics—including machine learning, computer architecture, optimization, and theoretical statistics. I enjoy building systems, solving technical challenges, and exploring how theory connects with real-world engineering.
 
 <!--- - 💼 Currently working on: [Your Project or Goal] -->
-- 🎓 Education: University of California, Berkeley
-- 💻 Major: Electrical Engineering and Computer Science (EECS)
-- 🌱 Grade: 4.0
-- 🧠 Interested in: Machine learning, computer architecture, optimization, and theoretical statistics
-- 📫 How to reach me: jasontrinh@berkeley.edu
+- Education: University of California, Berkeley
+- Major: Electrical Engineering and Computer Science (EECS)
+- Grade: 4.0
+- Interested in: Machine learning, computer architecture, optimization, and theoretical statistics
+- How to reach me: jasontrinh@berkeley.edu
 
-## 📘 Coursework (UC Berkeley)
+## Coursework (UC Berkeley)
 
 | Course Code | Course Name                                          | Grade |
 |-------------|-------------------------------------------------------|:-----:|
@@ -22,10 +22,10 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
 | EECS 127    | Optimization Models in Engineering                    |   A   |
 | CS 61C      | Great Ideas in Computer Architecture (Machine Structures) |       |
 
-## 🔗 Connect with Me
+## Connect with Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-informational?style=flat&logo=linkedin&logoColor=white&color=0A66C2)](https://www.linkedin.com/in/jason-trinh-4590a8315)
 
-## 📄 Resume
+## Resume
 > 📎 [View PDF version](https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/Resume%207-25-27_img.jpg)
 
 <details>
@@ -36,11 +36,11 @@ I'm a student at the University of California, Berkeley, majoring in Electrical 
   </p>
 </details>
 
-## 🎮 Play My Game - Lights Off
+## Play My Game - Lights Off
 
-I built a game you can try out — no installation needed beyond Java!
+I built a game you can try out — no installation needed beyond Java
 
-> 📥 [Click here to download the game (.jar)](https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/byow-game.jar)
+> [Click here to download the game (.jar)](https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/byow-game.jar)
 
 To run:
 
@@ -53,7 +53,7 @@ To run:
 java -jar byow-game.jar
 ```
 <details>
-  <summary>🖼️ Click to view game screenshot</summary>
+  <summary>Click to view game screenshot</summary>
 
   <p align="center">
     <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/game_preview.png" target="_blank">
@@ -64,7 +64,7 @@ java -jar byow-game.jar
 </details>
 
 <details>
-  <summary>📘 How to Play</summary>
+  <summary>How to Play</summary>
   <br />
   <strong>Objective</strong>
   <ul>
@@ -109,12 +109,12 @@ java -jar byow-game.jar
   </ul>
 </details>
 
-## 🧪 Visualizing Quantum Systems
+## Visualizing Quantum Systems
 
 Here's a visualization of an electron's probability density evolving in a 2D lattice structure. The simulation was computed by evolving the wavefunction over time using a Hamiltonian matrix, leveraging linear algebra techniques to capture quantum behavior on a discrete spatial grid.
 
 <details>
-  <summary>🌀 Click to view quantum probability density GIF</summary>
+  <summary>Click to view quantum probability density GIF</summary>
   <br />
   <p align="center">
     <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/electron.gif" target="_blank">
@@ -123,12 +123,12 @@ Here's a visualization of an electron's probability density evolving in a 2D lat
   </p>
 </details>
 
-## 🗣️ Speech Classifier Visualization
+## Speech Classifier Visualization
 
 This section showcases visualizations used in a speech classifier. The first plot is a spectrogram representing time-frequency features of spoken audio. The second plot shows clustered embeddings of the processed signals.
 
 <details>
-  <summary>📊 Click to view spectrogram and clustering plots</summary>
+  <summary>Click to view spectrogram and clustering plots</summary>
   <br />
   <p align="center">
     <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/spectrogram.png" target="_blank">
