@@ -3,12 +3,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects - Jason Trinh</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
     body {
       font-family: 'Open Sans', sans-serif;
       line-height: 1.6;
       padding: 20px;
+      background-color: #ffffff;
     }
     .container {
       max-width: 800px;
@@ -44,6 +45,13 @@
       border-radius: 3px;
       font-family: monospace;
     }
+    strong {
+      display: inline-block;
+      background-color: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -53,7 +61,7 @@
     <h3>Lights Off - Java Game</h3>
     <p>I built a game you can try out — no installation needed beyond Java.</p>
     <p><a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/byow-game.jar">Download the game (.jar)</a></p>
-    <p>To run:</p>
+    <p><strong>To run:</strong></p>
     <ol>
       <li>Make sure you have Java installed (JDK or JRE).</li>
       <li>Download the <code>.jar</code> file from the link above.</li>
@@ -70,6 +78,7 @@
     </details>
     <details>
       <summary>How to Play</summary>
+      <p><strong>Objective</strong></p>
       <ul>
         <li>Explore the world</li>
         <li>Find keys scattered across the map and place them in "the zone"</li>
@@ -77,7 +86,63 @@
         <li>Collect orbs to use abilities</li>
         <li>Avoid "the entity"</li>
       </ul>
+      <p><strong>Main Menu</strong></p>
       <ul>
         <li><code>n</code>: Start new game</li>
         <li><code>l</code>: Load game</li>
-        <li><code>q</code>:
+        <li><code>q</code>: Quit</li>
+      </ul>
+      <p><strong>In Game</strong></p>
+      <ul>
+        <li>Move: <code>w</code>, <code>a</code>, <code>s</code>, <code>d</code></li>
+        <li><code>j</code>: Pick up / place key</li>
+        <li><code>k</code>: Dash</li>
+        <li><code>m</code>: Teleport</li>
+      </ul>
+      <p><strong>Other Keys</strong></p>
+      <ul>
+        <li><code>z</code>: Toggle lights</li>
+        <li><code>x</code>: Show path</li>
+        <li><code>v</code>: Save</li>
+        <li><code>l</code>: Load</li>
+        <li><code>r</code>: Restart</li>
+        <li><code>:</code> then <code>q</code>: Quit</li>
+      </ul>
+      <p><strong>HUD</strong></p>
+      <ul>
+        <li>Facing direction</li>
+        <li>Number of keys placed</li>
+        <li>Orbs collected</li>
+        <li>Tile under cursor</li>
+      </ul>
+    </details>
+
+    <h3>Quantum System Simulation</h3>
+    <p>Here's a visualization of an electron's probability density evolving in a 2D lattice structure. The simulation was computed by evolving the wavefunction over time using a Hamiltonian matrix, leveraging linear algebra techniques to capture quantum behavior on a discrete spatial grid.</p>
+    <details>
+      <summary>Click to view quantum probability density GIF</summary>
+      <p align="center">
+        <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/electron.gif" target="_blank">
+          <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/electron.gif" alt="Electron Density in 2D Lattice" width="70%" />
+        </a>
+      </p>
+    </details>
+
+    <h3>Speech Classifier Visualization</h3>
+    <p>This section showcases visualizations used in a speech classifier. The first plot is a spectrogram representing time-frequency features of spoken audio. The second plot shows clustered embeddings of the processed signals.</p>
+    <details>
+      <summary>Click to view spectrogram and clustering plots</summary>
+      <p align="center">
+        <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/spectrogram.png" target="_blank">
+          <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/spectrogram.png" alt="Spectrogram" width="50%" />
+        </a>
+      </p>
+      <p align="center">
+        <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/cluster.png" target="_blank">
+          <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/cluster.png" alt="Embedding Clusters" width="50%" />
+        </a>
+      </p>
+    </details>
+  </div>
+</body>
+</html>
