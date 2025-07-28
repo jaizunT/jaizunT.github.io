@@ -1,76 +1,101 @@
-<h2>Projects</h2>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Jason Trinh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    a {
+      color: #0645ad;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Projects</h1>
 
-  <h3>Lights Off - Java Game</h3>
-  <p>I built a game you can try out — no installation needed beyond Java.</p>
-  <p><a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/byow-game.jar">Download the game (.jar)</a></p>
-  <details>
-    <summary>Click to view game screenshot</summary>
-    <p align="center">
-      <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/game_preview.png" target="_blank">
-        <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/game_preview.png" alt="Lights Off Game Screenshot" width="80%">
-      </a>
-    </p>
-  </details>
+    <h3>Lights Off - Java Game</h3>
+    <p>I built a game you can try out — no installation needed beyond Java.</p>
+    <p><a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/byow-game.jar">Download the game (.jar)</a></p>
+    <details>
+      <summary>Click to view game screenshot</summary>
+      <p align="center">
+        <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/game_preview.png" target="_blank">
+          <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/game_preview.png" alt="Lights Off Game Screenshot" width="80%" />
+        </a>
+      </p>
+    </details>
+    <details>
+      <summary>How to Play</summary>
+      <ul>
+        <li>Explore the world</li>
+        <li>Find keys scattered across the map and place them in "the zone"</li>
+        <li>Enter the portal to win</li>
+        <li>Collect orbs to use abilities</li>
+        <li>Avoid "the entity"</li>
+      </ul>
+      <ul>
+        <li><code>n</code>: Start new game</li>
+        <li><code>l</code>: Load game</li>
+        <li><code>q</code>: Quit</li>
+      </ul>
+      <ul>
+        <li>Move: <code>w</code>, <code>a</code>, <code>s</code>, <code>d</code></li>
+        <li><code>j</code>: Pick up / place key</li>
+        <li><code>k</code>: Dash</li>
+        <li><code>m</code>: Teleport</li>
+      </ul>
+      <ul>
+        <li><code>z</code>: Toggle lights</li>
+        <li><code>x</code>: Show path</li>
+        <li><code>v</code>: Save</li>
+        <li><code>l</code>: Load</li>
+        <li><code>r</code>: Restart</li>
+        <li><code>:</code> then <code>q</code>: Quit</li>
+      </ul>
+      <ul>
+        <li>HUD: Facing, keys, orbs, cursor tile</li>
+      </ul>
+    </details>
 
-  <details>
-    <summary>How to Play</summary>
-    <ul>
-      <li>Explore the world</li>
-      <li>Find keys scattered across the map and place them in "the zone"</li>
-      <li>Enter the portal to win</li>
-      <li>Collect orbs to use abilities</li>
-      <li>Avoid "the entity"</li>
-    </ul>
-    <ul>
-      <li><code>n</code>: Start new game</li>
-      <li><code>l</code>: Load game</li>
-      <li><code>q</code>: Quit</li>
-    </ul>
-    <ul>
-      <li>Move: <code>w</code>, <code>a</code>, <code>s</code>, <code>d</code></li>
-      <li><code>j</code>: Pick up / place key</li>
-      <li><code>k</code>: Dash</li>
-      <li><code>m</code>: Teleport</li>
-    </ul>
-    <ul>
-      <li><code>z</code>: Toggle lights</li>
-      <li><code>x</code>: Show path</li>
-      <li><code>v</code>: Save</li>
-      <li><code>l</code>: Load</li>
-      <li><code>r</code>: Restart</li>
-      <li><code>:</code> then <code>q</code>: Quit</li>
-    </ul>
-    <ul>
-      <li>HUD: Facing, keys, orbs, cursor tile</li>
-    </ul>
-  </details>
+    <h3>Quantum System Simulation</h3>
+    <p>Here's a visualization of an electron's probability density evolving in a 2D lattice structure. The simulation was computed by evolving the wavefunction over time using a Hamiltonian matrix, leveraging linear algebra techniques to capture quantum behavior on a discrete spatial grid.</p>
+    <details>
+      <summary>Click to view quantum probability density GIF</summary>
+      <p align="center">
+        <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/electron.gif" target="_blank">
+          <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/electron.gif" alt="Electron Density in 2D Lattice" width="70%" />
+        </a>
+      </p>
+    </details>
 
-  <h3>Quantum System Simulation</h3>
-  <p>Here's a visualization of an electron's probability density evolving in a 2D lattice structure. The simulation was computed by evolving the wavefunction over time using a Hamiltonian matrix, leveraging linear algebra techniques to capture quantum behavior on a discrete spatial grid.</p>
-  <details>
-    <summary>Click to view quantum probability density GIF</summary>
-    <p align="center">
-      <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/electron.gif" target="_blank">
-        <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/electron.gif" alt="Electron Density in 2D Lattice" width="70%">
-      </a>
-    </p>
-  </details>
-
-  <h3>Speech Classifier Visualization</h3>
-  <p>This section showcases visualizations used in a speech classifier. The first plot is a spectrogram representing time-frequency features of spoken audio. The second plot shows clustered embeddings of the processed signals.</p>
-  <details>
-    <summary>Click to view spectrogram and clustering plots</summary>
-    <p align="center">
-      <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/spectrogram.png" target="_blank">
-        <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/spectrogram.png" alt="Spectrogram" width="50%">
-      </a>
-    </p>
-    <p align="center">
-      <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/cluster.png" target="_blank">
-        <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/cluster.png" alt="Embedding Clusters" width="50%">
-      </a>
-    </p>
-  </details>
-
+    <h3>Speech Classifier Visualization</h3>
+    <p>This section showcases visualizations used in a speech classifier. The first plot is a spectrogram representing time-frequency features of spoken audio. The second plot shows clustered embeddings of the processed signals.</p>
+    <details>
+      <summary>Click to view spectrogram and clustering plots</summary>
+      <p align="center">
+        <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/spectrogram.png" target="_blank">
+          <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/spectrogram.png" alt="Spectrogram" width="50%" />
+        </a>
+      </p>
+      <p align="center">
+        <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/cluster.png" target="_blank">
+          <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/cluster.png" alt="Embedding Clusters" width="50%" />
+        </a>
+      </p>
+    </details>
+  </div>
 </body>
 </html>
