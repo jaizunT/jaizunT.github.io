@@ -14,6 +14,22 @@
       padding: 20px;
       background-color: #ffffff;
     }
+    .nav {
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+    .nav a {
+      margin-right: 20px;
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      background-color: #f0f0f0;
+      color: #000;
+    }
+    .nav a.active {
+      background-color: #dcdcdc;
+    }
     details {
       margin-bottom: 1em;
     }
@@ -55,6 +71,10 @@
 </head>
 <body>
   <h1>Jason Trinh</h1>
+  <div class="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="projects.html">Projects</a>
+  </div>
 
   <h2>About Me</h2>
   <p>
@@ -91,7 +111,5 @@
       <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/Resume%207-25-27_img.jpg" alt="Resume" width="70%">
     </p>
   </details>
-
-  <h2><a href="projects.html" class="project-link">View My Projects</a></h2>
 </body>
 </html>
