@@ -65,15 +65,17 @@
   <!-- Polar / Muon / Optimizer Experiments -->
   <h2>Optimizer Experiments for Transformer-Style Models</h2>
   <p>
-    Exploratory work on making Muon / Polar-Express–style optimizers pluggable inside a GPT-2–like training loop, with extra metrics for
-    orthogonality, attention statistics, and optimizer-step diagnostics.
+    Currently working on reproducing and extending the <em>Polar Express</em> variant of the Muon optimizer on GPT-2–style models. The focus is on
+    making Muon+Polar-Express fully configurable (polynomial degree, iteration count, safety/cushion factors, and apply frequency),
+    and then testing whether attention layers stay stable at higher learning rates compared to plain Muon and AdamW.
   </p>
   <ul>
-    <li>Goal: compare <strong>AdamW</strong> vs. <strong>Muon / Polar-Express–like</strong> updates on small/medium models</li>
-    <li>Logged activation norms, LR schedules, and per-layer updates to inspect stability</li>
-    <li>Used linear algebra tools to reason about update structure (matrix-sign / polar-style steps)</li>
+    <li><strong>Phase 1:</strong> hyperparameter sweep for Polar-Express-in-Muon on small/medium GPT-2 (FineWeb, tens of millions of tokens) to find a fast-but-stable config.</li>
+    <li><strong>Phase 2:</strong> attention-layer analysis comparing <strong>AdamW</strong> vs <strong>Muon (legacy)</strong> vs <strong>Muon + Polar Express</strong>, logging attention entropy and QK/√d.</li>
+    <li>All runs streamed to <strong>Weights &amp; Biases</strong> (loss, step/PE time, orthogonality error, GPU metrics) for side-by-side comparisons.</li>
+    <li>Implemented per-layer orthogonality diagnostics to verify the polar step is actually improving conditioning.</li>
+    <li>Runs executed on dual NVIDIA A6000 + BeeGFS storage cluster; triage runs on a 4070/5070 node.</li>
   </ul>
-
 
 </body>
 </html>
