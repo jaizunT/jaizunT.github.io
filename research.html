@@ -3,21 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visualizations - Jason Trinh</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+  <title>Research - Jason Trinh</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
   <style>
-    /* --- Core Layout (Matches Research Page) --- */
     body {
       font-family: 'Open Sans', sans-serif;
       line-height: 1.6;
-      max-width: 800px; /* Matched to research.html */
+      max-width: 800px;
       margin: auto;
       padding: 20px;
       background-color: #ffffff;
-      color: #333;
     }
-    
-    /* --- Navigation (Matches Research Page Structure) --- */
     .nav {
       margin-top: -10px;
       margin-bottom: 30px;
@@ -28,189 +24,59 @@
       text-decoration: none;
       border-radius: 4px;
       font-weight: 600;
-      background-color: #f0f0f0; /* Grey background for inactive */
+      background-color: #f0f0f0;
       color: #000;
     }
-    
-    /* --- Active Tab (Blue per request) --- */
     .nav a.active {
-      background-color: #4f46e5; /* Indigo/Blue */
-      color: white;
+      background-color: #dcdcdc;
     }
-
-    /* --- Typography --- */
-    h1 { font-weight: 700; color: #111; margin-bottom: 0.5em; }
-    h2 { margin-top: 1.5em; color: #1e293b; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-    h3 { margin-top: 1.5em; color: #334155; font-size: 1.1rem; }
-    h4 { margin-top: 0; margin-bottom: 0.5em; }
-    p { margin-bottom: 1em; color: #333; }
-    a { color: #0645ad; }
-    
-    /* --- Custom Styles for Visualizations (Preserved) --- */
-    .viz-wrapper {
-      margin-top: 20px;
-      margin-bottom: 40px;
+    details {
+      margin-bottom: 1em;
     }
-    .viz-container {
-      width: 100%;
-      height: 850px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      background: #f8fafc;
+    summary {
+      font-weight: bold;
+      cursor: pointer;
     }
-    .external-link {
-      display: inline-flex;
-      align-items: center;
-      margin-bottom: 10px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-decoration: none;
+    a {
+      color: #0645ad;
     }
-    .external-link:hover { text-decoration: underline; }
-
-    /* --- Theory Section Styling --- */
-    .theory-section {
-      background-color: #f9f9f9;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 25px;
-      margin-bottom: 40px;
-    }
-
-    .motivation-block {
-      margin-bottom: 30px;
-    }
-
-    .algo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .algo-card {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 6px;
-      border: 1px solid #ddd;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-    .algo-card h4 {
-      font-size: 1rem;
-      color: #000;
-      border-bottom: 2px solid #4f46e5;
-      display: inline-block;
-      padding-bottom: 4px;
-    }
-    .algo-card p {
-      font-size: 0.9rem;
-      margin-bottom: 0;
-      color: #444;
-    }
-    .math {
-      font-family: monospace;
-      background: #f4f4f4;
+    code {
+      background-color: #f4f4f4;
       padding: 2px 4px;
-      border-radius: 3px;
-      font-size: 0.85rem;
-      color: #d946ef;
       border: 1px solid #ccc;
+      border-radius: 3px;
+      font-family: monospace;
     }
-
   </style>
 </head>
 <body>
-  <!-- Header Name -->
   <h1>Jason Trinh</h1>
-  
-  <!-- Navigation -->
   <div class="nav">
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
-    <a href="research.html">Research</a>
-    <a href="visualizations.html" class="active">Visualizations</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="visualizations.html">Visualizations</a>
   </div>
 
-  <!-- Page Title -->
-  <h1>Interactive Visualizations</h1>
-  
-  <div class="theory-section">
-    <div class="motivation-block">
-      <h2>Motivation: Orthogonalization for Muon Optimization</h2>
-      <p>
-        In modern deep learning, optimizers like <strong>Muon</strong> achieve state-of-the-art performance by orthogonalizing gradient updates during <strong>model training</strong>. 
-        Mathematically, this orthogonalization step normalizes the update geometry, which corresponds to forcing all singular values of the gradient matrix to converge to exactly <strong>1</strong>.
-      </p>
-      <p>
-        <strong>The Solution:</strong> Computing a full SVD at every training step is too computationally expensive. Instead, we use iterative algorithms like <strong>Polar Express</strong>. 
-        These methods rely purely on matrix-matrix multiplications—which are highly efficient on GPUs—to rapidly "flatten" the spectrum, pushing all singular values toward 1 without explicit decomposition. 
-        This tool visualizes that convergence process.
-      </p>
-    </div>
-
-    <h3>The Algorithms Visualized</h3>
-    <div class="algo-grid">
-      <!-- Algorithm 1: Polar Express -->
-      <div class="algo-card">
-        <h4>Polar Express</h4>
-        <p>
-          A novel, highly-optimized iterative method designed for modern hardware. It uses specific polynomial scaling coefficients to accelerate the convergence 
-          of singular values to 1 far faster than standard methods.
-        </p>
-        <p style="margin-top:10px; font-size: 0.85rem; color: #666;">
-          <em>Key Trait:</em> Uses "cushioning" and "safety" parameters to aggressively converge without stability loss.
-        </p>
-      </div>
-
-      <!-- Algorithm 2: Newton-Schulz -->
-      <div class="algo-card">
-        <h4>Newton-Schulz</h4>
-        <p>
-          The classic iteration for computing the Polar Decomposition. It converges quadratically to orthogonal form but is only locally convergent (requires singular values close to 1 initially).
-        </p>
-        <p style="margin-top:10px;">
-          <span class="math">X<sub>k+1</sub> = 0.5 * X<sub>k</sub>(3I - X<sub>k</sub><sup>T</sup>X<sub>k</sub>)</span>
-        </p>
-      </div>
-
-      <!-- Algorithm 3: Jordan (Matrix Sign) -->
-      <div class="algo-card">
-        <h4>Jordan (Matrix Sign)</h4>
-        <p>
-          Based on the Matrix Sign Function. It is globally convergent and robustly forces singular values to 1. However, it typically requires matrix inversion, 
-          making it computationally expensive for large models.
-        </p>
-        <p style="margin-top:10px;">
-          <span class="math">X<sub>k+1</sub> = 0.5 * (X<sub>k</sub> + X<sub>k</sub><sup>-T</sup>)</span>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- VISUALIZATION SECTION -->
-  <h2>Interactive Tool</h2>
+  <h1>Research</h1>
   <p>
-    Use the dashboard below to experiment with these algorithms. You can sketch your own initial distribution of singular values or use presets to see how robust each algorithm is.
+    Selected research and exploratory work in machine learning, optimization, and scientific computing.
   </p>
-
-  <a href="https://jaizunT.github.io/singular_value_viz/" target="_blank" class="external-link">
-    Open Fullscreen in New Window ↗
-  </a>
-
-  <div class="viz-wrapper">
-    <div class="viz-container">
-      <iframe 
-        src="https://jaizunT.github.io/singular_value_viz/" 
-        width="100%" 
-        height="100%" 
-        style="border:none;"
-        title="SVD Visualization"
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
+  
+  <!-- Polar / Muon / Optimizer Experiments -->
+  <h2>Optimizer Advancements for Transformer Models</h2>
+  <p>
+    Currently working on extending the <em>Polar Express</em> variant of the Muon optimizer on GPT-2–style models. The focus is on
+    making Muon+Polar-Express fully configurable (polynomial degree, iteration count, safety/cushion factors, and apply frequency),
+    and then testing whether attention layers stay stable at higher learning rates compared to plain Muon and AdamW.
+  </p>
+  <ul>
+    <li><strong>Phase 1:</strong> hyperparameter sweep for Polar-Express-in-Muon on small/medium GPT-2 (FineWeb, tens of millions of tokens) to find a fast-but-stable config.</li>
+    <li><strong>Phase 2:</strong> attention-layer analysis comparing <strong>AdamW</strong> vs <strong>Muon (legacy)</strong> vs <strong>Muon + Polar Express</strong>, logging attention entropy and QK/√d.</li>
+    <li>All runs streamed to <strong>Weights &amp; Biases</strong> (loss, step/PE time, orthogonality error, GPU metrics) for side-by-side comparisons.</li>
+    <li>Implemented per-layer orthogonality diagnostics to verify the polar step is actually improving conditioning.</li>
+    <li>Runs executed on dual NVIDIA A6000 + BeeGFS storage cluster; triage runs on a 4070/5070 node.</li>
+  </ul>
 
 </body>
 </html>
