@@ -4,21 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Visualizations - Jason Trinh</title>
+  <!-- Same font family as other pages -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
   <style>
-    /* Match Projects page styles */
+    /* --- Core Layout (match Projects spacing/typography for headings) --- */
     body {
       font-family: 'Open Sans', sans-serif;
       line-height: 1.6;
-      max-width: 800px;
+      max-width: 800px;     /* match Projects */
       margin: auto;
       padding: 20px;
       background-color: #ffffff;
       color: #333;
     }
+
+    /* Name and page-title spacing to match Projects page */
+    h1 {
+      /* Keep a clean, default look similar to Projects (no extra heavy weight or tight spacing) */
+      font-weight: 600;
+      color: #000;
+      margin: 0 0 0.5em 0;
+    }
+
+    /* --- Navigation (keep your blue active tab) --- */
     .nav {
-      margin-top: -10px;
-      margin-bottom: 30px;
+      margin-top: -10px;     /* same as Projects */
+      margin-bottom: 30px;   /* same as Projects */
     }
     .nav a {
       margin-right: 20px;
@@ -30,8 +41,11 @@
       color: #000;
     }
     .nav a.active {
-      background-color: #dcdcdc; /* same grey highlight as Projects */
+      background-color: #4f46e5; /* keep blue active */
+      color: #fff;
     }
+
+    /* Keep your existing content design */
     details { margin-bottom: 1em; }
     summary { font-weight: bold; cursor: pointer; }
     a { color: #0645ad; }
@@ -43,7 +57,6 @@
       font-family: monospace;
     }
 
-    /* Light containers reused on this page only (doesn't change heading look) */
     .theory-section {
       background-color: #f9f9f9;
       border: 1px solid #eee;
@@ -90,10 +103,10 @@
   </style>
 </head>
 <body>
-  <!-- Header Name (same spacing/weight as Projects) -->
+  <!-- Header Name (spacing/weight aligned with Projects) -->
   <h1>Jason Trinh</h1>
 
-  <!-- Nav (same look; Visualizations active in grey) -->
+  <!-- Nav (blue active kept) -->
   <div class="nav">
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
@@ -101,7 +114,7 @@
     <a href="visualizations.html" class="active">Visualizations</a>
   </div>
 
-  <!-- Page title matches Projects heading style -->
+  <!-- Page Title (styled like Projects' main section header) -->
   <h1>Interactive Visualizations</h1>
 
   <div class="theory-section">
