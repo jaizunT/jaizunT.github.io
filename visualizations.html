@@ -6,7 +6,7 @@
   <title>Visualizations - Jason Trinh</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
   <style>
-    /* Match research.html header typography/spacing */
+    /* --- Match research.html header typography/spacing --- */
     body {
       font-family: 'Open Sans', sans-serif;
       line-height: 1.6;
@@ -16,6 +16,7 @@
       background-color: #ffffff;
       color: #333;
     }
+
     /* Nav matches research (spacing/sizes), active stays blue */
     .nav {
       margin-top: -10px;
@@ -35,27 +36,62 @@
       color: #fff;
     }
 
+    /* Keep rest of page styling as-is (lightweight) */
     a { color: #0645ad; }
 
-    /* Utility */
+    /* Retain your visualization container look (kept in case you add frames later) */
+    .viz-wrapper { margin-top: 20px; margin-bottom: 40px; }
+    .viz-container {
+      width: 100%;
+      height: 850px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: #f8fafc;
+    }
     .external-link {
       display: inline-flex;
       align-items: center;
-      margin: 6px 0 14px 0;
+      margin-bottom: 10px;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       text-decoration: none;
     }
     .external-link:hover { text-decoration: underline; }
 
-    /* Cards / sections (reuse lightweight styles) */
-    .section-card {
+    .theory-section {
       background-color: #f9f9f9;
       border: 1px solid #eee;
       border-radius: 8px;
-      padding: 20px;
-      margin: 24px 0;
+      padding: 25px;
+      margin-bottom: 40px;
     }
+    .motivation-block { margin-bottom: 30px; }
+
+    .algo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .algo-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .algo-card h4 {
+      font-size: 1rem;
+      color: #000;
+      border-bottom: 2px solid #4f46e5;
+      display: inline-block;
+      padding-bottom: 4px;
+      margin: 0 0 8px 0;
+    }
+    .algo-card p { font-size: 0.9rem; margin: 0 0 6px 0; color: #444; }
+
     .math {
       font-family: monospace;
       background: #f4f4f4;
@@ -68,8 +104,10 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header Name (match research.html) -->
   <h1>Jason Trinh</h1>
+
+  <!-- Navigation (match research.html; active stays blue) -->
   <div class="nav">
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
@@ -77,58 +115,92 @@
     <a href="visualizations.html" class="active">Visualizations</a>
   </div>
 
-  <!-- Page Title -->
+  <!-- Page Title (match research.html spacing/weight) -->
   <h1>Interactive Visualizations</h1>
 
-  <!-- Activation Visualizer (FIRST) -->
-  <div class="section-card">
-    <h2>Activation Visualizer</h2>
-    <p>
-      An interactive tool for exploring how <strong>input vectors evolve through layers</strong> across different architectures
-      (<strong>MLP, CNN, RNN, Transformer</strong>). Configure input size and weight dimensions, then step through the network to
-      inspect values at each stage.
-    </p>
-    <ul>
-      <li><strong>Architectures:</strong> toggle between MLP, CNN, RNN, and Transformer blocks.</li>
-      <li><strong>Configurable dimensions:</strong> vary input length, hidden width, kernel/filter sizes, and sequence length.</li>
-      <li><strong>Per-stage views:</strong> examine tensors after linear/convolutional ops, pre/post activation, and normalization.</li>
-      <li><strong>What-if runs:</strong> adjust weight init scales and input elements to see output variations</li>
-    </ul>
-    <p>
-      <a href="https://jaizunT.github.io/activation_visualizer/" target="_blank" rel="noopener" class="external-link">
-        Open Activation Visualizer ↗
-      </a>
-      &nbsp;|&nbsp;
-      <a href="https://github.com/jaizunT/activation_visualizer" target="_blank" rel="noopener">
-        GitHub Repository
-      </a>
-    </p>
+  <div class="theory-section">
+    <div class="motivation-block">
+      <h2>Orthogonalization for Muon Optimization</h2>
+      <p>
+        In modern deep learning, optimizers like <strong>Muon</strong> achieve state-of-the-art performance by orthogonalizing gradient updates during
+        <strong>model training</strong>. Mathematically, this orthogonalization step normalizes the update geometry, which corresponds to forcing all singular
+        values of the gradient matrix to converge to exactly <strong>1</strong>.
+      </p>
+      <p>
+        <strong>The Solution:</strong> Computing a full SVD at every training step is too computationally expensive. Instead, we use iterative algorithms like
+        <strong>Polar Express</strong>. These methods rely purely on matrix-matrix multiplications—which are highly efficient on GPUs—to rapidly "flatten" the spectrum,
+        pushing all singular values toward 1 without explicit decomposition. This tool visualizes that convergence process.
+      </p>
+    </div>
+
+    <h3>The Algorithms Visualized</h3>
+    <div class="algo-grid">
+      <div class="algo-card">
+        <h4>Polar Express</h4>
+        <p>
+          A novel, highly-optimized iterative method designed for modern hardware. It uses specific polynomial scaling coefficients to accelerate the convergence
+          of singular values to 1 far faster than standard methods.
+        </p>
+        <p style="margin-top:10px; font-size: 0.85rem; color: #666;">
+          <em>Key Trait:</em> Uses "cushioning" and "safety" parameters to aggressively converge without stability loss.
+        </p>
+      </div>
+
+      <div class="algo-card">
+        <h4>Newton-Schulz</h4>
+        <p>
+          The classic iteration for computing the Polar Decomposition. It converges quadratically to orthogonal form but is only locally convergent (requires singular values close to 1 initially).
+        </p>
+        <p style="margin-top:10px;">
+          <span class="math">X<sub>k+1</sub> = 0.5 * X<sub>k</sub>(3I - X<sub>k</sub><sup>T</sup>X<sub>k</sub>)</span>
+        </p>
+      </div>
+
+      <div class="algo-card">
+        <h4>Jordan (Matrix Sign)</h4>
+        <p>
+          Based on the Matrix Sign Function. It is globally convergent and robustly forces singular values to 1. However, it typically requires matrix inversion,
+          making it computationally expensive for large models.
+        </p>
+        <p style="margin-top:10px;">
+          <span class="math">X<sub>k+1</sub> = 0.5 * (X<sub>k</sub> + X<sub>k</sub><sup>-T</sup>)</span>
+        </p>
+      </div>
+    </div>
   </div>
 
+  <!-- VISUALIZATION LINKS (Activation first, no embeddings) -->
+  <h2>Activation Visualizer</h2>
+  <p>
+    An interactive tool for exploring how <strong>input vectors evolve through layers</strong> across different architectures
+    (<strong>MLP, CNN, RNN, Transformer</strong>). Configure input and weight sizes, then step through the network to inspect values at each stage.
+  </p>
+  <ul>
+    <li><strong>Architectures:</strong> toggle between MLP, CNN, RNN, and Transformer blocks.</li>
+    <li><strong>Configurable dimensions:</strong> vary input length, hidden width, kernel/filter sizes, and sequence length.</li>
+    <li><strong>Per-stage views:</strong> examine tensors after linear/convolutional ops, pre/post activation, and normalization.</li>
+    <li><strong>Signal evolution:</strong> track how statistics (mean/variance, min/max) change layer by layer.</li>
+    <li><strong>What-if runs:</strong> adjust weight init scales and input magnitude to see stability/overflow behaviors.</li>
+  </ul>
+  <p>
+    <a href="https://jaizunT.github.io/activation_visualizer/" target="_blank" rel="noopener" class="external-link">
+      Open Activation Visualizer ↗
+    </a>
+    &nbsp;|&nbsp;
+    <a href="https://github.com/jaizunT/activation_visualizer" target="_blank" rel="noopener">
+      GitHub Repository
+    </a>
+  </p>
 
-  <!-- Polar/Muon Visualizer (SECOND) -->
-  <div class="section-card">
-    <h2>Polar-Express / Muon Orthogonalization Visualizer</h2>
-    <p>
-      Visualizes orthogonalization methods used in optimizers like <strong>Muon</strong>. Iterative schemes such as
-      <strong>Polar Express</strong> drive singular values toward <strong>1</strong> using only matrix–matrix multiplies,
-      avoiding costly SVD while improving conditioning of weight updates.
-    </p>
-    <p style="margin-bottom: 6px;"><em>Reference iterations</em> often compared:</p>
-    <ul>
-      <li><strong>Polar Express:</strong> accelerated polynomial scaling with cushioning/safety.</li>
-      <li><strong>Newton–Schulz:</strong> locally convergent quadratic iteration:
-        <span class="math">X<sub>k+1</sub> = 0.5 · X<sub>k</sub>(3I − X<sub>k</sub><sup>T</sup>X<sub>k</sub>)</span>.
-      </li>
-      <li><strong>Matrix Sign (Jordan):</strong> robust but inversion-heavy:
-        <span class="math">X<sub>k+1</sub> = 0.5 · (X<sub>k</sub> + X<sub>k</sub><sup>−T</sup>)</span>.
-      </li>
-    </ul>
-    <p>
-      <a href="https://jaizunT.github.io/singular_value_viz/" target="_blank" rel="noopener" class="external-link">
-        Open Polar-Express / Muon Visualizer ↗
-      </a>
-    </p>
-  </div>
+  <h2>Polar-Express / Muon Visualizer</h2>
+  <p>
+    Explore iterative orthogonalization methods (Polar Express, Newton–Schulz, Matrix Sign) and see how they push singular values toward 1 using only matrix multiplications.
+  </p>
+  <p>
+    <a href="https://jaizunT.github.io/singular_value_viz/" target="_blank" rel="noopener" class="external-link">
+      Open Polar-Express / Muon Visualizer ↗
+    </a>
+  </p>
+
 </body>
 </html>
