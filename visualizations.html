@@ -109,38 +109,33 @@
   <!-- Page Title (match research.html spacing/weight) -->
   <h1>Interactive Visualizations</h1>
 
-  <!-- ===== Activation Visualizer (own gray box) ===== -->
+  <!-- ===== Activation Visualizer (own gray box; no inner white card) ===== -->
   <div class="theory-section">
     <h2>Activation Visualizer</h2>
-    <div class="algo-grid">
-      <div class="algo-card">
-        <h4>Activation Visualizer</h4>
-        <p>
-          An interactive tool for exploring how <strong>input vectors evolve through layers</strong> across different architectures
-          (<strong>MLP, CNN, RNN, Transformer</strong>). Configure input and weight sizes, then step through the network to inspect
-          values at each stage.
-        </p>
-        <ul>
-          <li><strong>Architectures:</strong> toggle between MLP, CNN, RNN, and Transformer blocks.</li>
-          <li><strong>Configurable dimensions:</strong> vary input length, hidden width, kernel/filter sizes, and sequence length.</li>
-          <li><strong>Per-stage views:</strong> examine tensors after linear/convolutional ops, pre/post activation, and normalization.</li>
-          <li><strong>Signal evolution:</strong> track statistics (mean/variance, min/max) layer by layer.</li>
-          <li><strong>What-if runs:</strong> adjust weight init scales and input magnitude to see stability/overflow behaviors.</li>
-        </ul>
-        <p>
-          <a href="https://jaizunT.github.io/activation_visualizer/" target="_blank" rel="noopener" class="external-link">
-            Open Activation Visualizer ↗
-          </a>
-          &nbsp;|&nbsp;
-          <a href="https://github.com/jaizunT/activation_visualizer" target="_blank" rel="noopener">
-            GitHub Repository
-          </a>
-        </p>
-      </div>
-    </div>
+    <p>
+      An interactive tool for exploring how <strong>input vectors evolve through layers</strong> across different architectures
+      (<strong>MLP, CNN, RNN, Transformer</strong>). Configure input and weight sizes, then step through the network to inspect
+      values at each stage.
+    </p>
+    <ul>
+      <li><strong>Architectures:</strong> toggle between MLP, CNN, RNN, and Transformer blocks.</li>
+      <li><strong>Configurable dimensions:</strong> vary input length, hidden width, kernel/filter sizes, and sequence length.</li>
+      <li><strong>Per-stage views:</strong> examine tensors after linear/convolutional ops, pre/post activation, and normalization.</li>
+      <li><strong>Signal evolution:</strong> track statistics (mean/variance, min/max) layer by layer.</li>
+      <li><strong>What-if runs:</strong> adjust weight init scales and input magnitude to see stability/overflow behaviors.</li>
+    </ul>
+    <p>
+      <a href="https://jaizunT.github.io/activation_visualizer/" target="_blank" rel="noopener" class="external-link">
+        Open Activation Visualizer ↗
+      </a>
+      &nbsp;|&nbsp;
+      <a href="https://github.com/jaizunT/activation_visualizer" target="_blank" rel="noopener">
+        GitHub Repository
+      </a>
+    </p>
   </div>
 
-  <!-- ===== Muon / Orthogonalization (separate gray box) ===== -->
+  <!-- ===== Muon / Orthogonalization (link moved into gray box) ===== -->
   <div class="theory-section">
     <div class="motivation-block">
       <h2>Orthogonalization for Muon Optimization</h2>
@@ -154,11 +149,16 @@
         <strong>Polar Express</strong>. These methods rely purely on matrix-matrix multiplications—which are highly efficient on GPUs—to rapidly "flatten" the spectrum,
         pushing all singular values toward 1 without explicit decomposition.
       </p>
+      <p>
+        <a href="https://jaizunT.github.io/singular_value_viz/" target="_blank" rel="noopener" class="external-link">
+          Open Polar-Express / Muon Visualizer ↗
+        </a>
+      </p>
     </div>
 
     <h3>The Algorithms Visualized</h3>
     <div class="algo-grid">
-      <!-- Polar Express (Muon) -->
+      <!-- Polar Express (no link inside the card now) -->
       <div class="algo-card">
         <h4>Polar Express</h4>
         <p>
@@ -167,11 +167,6 @@
         </p>
         <p style="margin-top:10px; font-size: 0.85rem; color: #666;">
           <em>Key Trait:</em> Uses "cushioning" and "safety" parameters to aggressively converge without stability loss.
-        </p>
-        <p>
-          <a href="https://jaizunT.github.io/singular_value_viz/" target="_blank" rel="noopener" class="external-link">
-            Open Polar-Express / Muon Visualizer ↗
-          </a>
         </p>
       </div>
 
