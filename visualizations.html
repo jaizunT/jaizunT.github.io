@@ -52,6 +52,7 @@
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
       margin-top: 20px;
+      margin-bottom: 20px;
     }
     .algo-card {
       background: #ffffff;
@@ -123,9 +124,39 @@
       </p>
     </div>
 
+    <!-- Own grid for Activation Visualizer -->
+    <h3>Activation Visualizer</h3>
+    <div class="algo-grid">
+      <div class="algo-card">
+        <h4>Activation Visualizer</h4>
+        <p>
+          An interactive tool for exploring how <strong>input vectors evolve through layers</strong> across different architectures
+          (<strong>MLP, CNN, RNN, Transformer</strong>). Configure input and weight sizes, then step through the network to inspect
+          values at each stage.
+        </p>
+        <ul>
+          <li><strong>Architectures:</strong> toggle between MLP, CNN, RNN, and Transformer blocks.</li>
+          <li><strong>Configurable dimensions:</strong> vary input length, hidden width, kernel/filter sizes, and sequence length.</li>
+          <li><strong>Per-stage views:</strong> examine tensors after linear/convolutional ops, pre/post activation, and normalization.</li>
+          <li><strong>Signal evolution:</strong> track statistics (mean/variance, min/max) layer by layer.</li>
+          <li><strong>What-if runs:</strong> adjust weight init scales and input magnitude to see stability/overflow behaviors.</li>
+        </ul>
+        <p>
+          <a href="https://jaizunT.github.io/activation_visualizer/" target="_blank" rel="noopener" class="external-link">
+            Open Activation Visualizer ↗
+          </a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/jaizunT/activation_visualizer" target="_blank" rel="noopener">
+            GitHub Repository
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Separate grid for Muon/orthogonalization algorithms -->
     <h3>The Algorithms Visualized</h3>
     <div class="algo-grid">
-      <!-- Polar Express (now includes link) -->
+      <!-- Polar Express (Muon) -->
       <div class="algo-card">
         <h4>Polar Express</h4>
         <p>
@@ -164,9 +195,7 @@
           <span class="math">X<sub>k+1</sub> = 0.5 * (X<sub>k</sub> + X<sub>k</sub><sup>-T</sup>)</span>
         </p>
       </div>
-
-      <!-- Activation Visualizer (new card) -->
-      <div class="algo-card">
-        <h4>Activation Visualizer</h4>
-        <p>
-          An interactive tool f
+    </div>
+  </div>
+</body>
+</html>
