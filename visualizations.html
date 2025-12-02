@@ -109,23 +109,9 @@
   <!-- Page Title (match research.html spacing/weight) -->
   <h1>Interactive Visualizations</h1>
 
+  <!-- ===== Activation Visualizer (own gray box) ===== -->
   <div class="theory-section">
-    <div class="motivation-block">
-      <h2>Orthogonalization for Muon Optimization</h2>
-      <p>
-        In modern deep learning, optimizers like <strong>Muon</strong> achieve state-of-the-art performance by orthogonalizing gradient updates during
-        <strong>model training</strong>. Mathematically, this orthogonalization step normalizes the update geometry, which corresponds to forcing all singular
-        values of the gradient matrix to converge to exactly <strong>1</strong>.
-      </p>
-      <p>
-        <strong>The Solution:</strong> Computing a full SVD at every training step is too computationally expensive. Instead, we use iterative algorithms like
-        <strong>Polar Express</strong>. These methods rely purely on matrix-matrix multiplications—which are highly efficient on GPUs—to rapidly "flatten" the spectrum,
-        pushing all singular values toward 1 without explicit decomposition.
-      </p>
-    </div>
-
-    <!-- Own grid for Activation Visualizer -->
-    <h3>Activation Visualizer</h3>
+    <h2>Activation Visualizer</h2>
     <div class="algo-grid">
       <div class="algo-card">
         <h4>Activation Visualizer</h4>
@@ -152,8 +138,24 @@
         </p>
       </div>
     </div>
+  </div>
 
-    <!-- Separate grid for Muon/orthogonalization algorithms -->
+  <!-- ===== Muon / Orthogonalization (separate gray box) ===== -->
+  <div class="theory-section">
+    <div class="motivation-block">
+      <h2>Orthogonalization for Muon Optimization</h2>
+      <p>
+        In modern deep learning, optimizers like <strong>Muon</strong> achieve state-of-the-art performance by orthogonalizing gradient updates during
+        <strong>model training</strong>. Mathematically, this orthogonalization step normalizes the update geometry, which corresponds to forcing all singular
+        values of the gradient matrix to converge to exactly <strong>1</strong>.
+      </p>
+      <p>
+        <strong>The Solution:</strong> Computing a full SVD at every training step is too computationally expensive. Instead, we use iterative algorithms like
+        <strong>Polar Express</strong>. These methods rely purely on matrix-matrix multiplications—which are highly efficient on GPUs—to rapidly "flatten" the spectrum,
+        pushing all singular values toward 1 without explicit decomposition.
+      </p>
+    </div>
+
     <h3>The Algorithms Visualized</h3>
     <div class="algo-grid">
       <!-- Polar Express (Muon) -->
