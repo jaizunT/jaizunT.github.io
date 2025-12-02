@@ -84,16 +84,15 @@
   <div class="section-card">
     <h2>Activation Visualizer</h2>
     <p>
-      An interactive tool to inspect how activations behave across layers for common nonlinearities
-      (e.g., ReLU, GELU, SiLU). It helps you spot <em>dead neurons</em>, saturation, and vanishing/exploding
-      trends before or during training.
+      An interactive tool for exploring how <strong>input vectors evolve through layers</strong> across different architectures
+      (<strong>MLP, CNN, RNN, Transformer</strong>). Configure input size and weight dimensions, then step through the network to
+      inspect values at each stage.
     </p>
     <ul>
-      <li><strong>Layer-by-layer distributions:</strong> histograms and summary stats (mean/variance) of activations.</li>
-      <li><strong>Saturation &amp; dead-ReLU rate:</strong> quick indicators when units clamp to 0 or extremes.</li>
-      <li><strong>Pre/post nonlinearity view:</strong> compare signals right before vs. after the activation.</li>
-      <li><strong>Depth diagnostics:</strong> track how activation scale drifts as you go deeper.</li>
-      <li><strong>Tunable inputs:</strong> experiment with input variance/scale to see stability regions.</li>
+      <li><strong>Architectures:</strong> toggle between MLP, CNN, RNN, and Transformer blocks.</li>
+      <li><strong>Configurable dimensions:</strong> vary input length, hidden width, kernel/filter sizes, and sequence length.</li>
+      <li><strong>Per-stage views:</strong> examine tensors after linear/convolutional ops, pre/post activation, and normalization.</li>
+      <li><strong>What-if runs:</strong> adjust weight init scales and input elements to see output variations</li>
     </ul>
     <p>
       <a href="https://jaizunT.github.io/activation_visualizer/" target="_blank" rel="noopener" class="external-link">
@@ -105,6 +104,7 @@
       </a>
     </p>
   </div>
+
 
   <!-- Polar/Muon Visualizer (SECOND) -->
   <div class="section-card">
