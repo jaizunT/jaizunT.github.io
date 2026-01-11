@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deep Learning - Jason Trinh</title>
+  <title>Reinforcement Learning - Jason Trinh</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -54,22 +54,28 @@
   <div class="nav">
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
-    <a href="deeplearning.html" class="active">Deep Learning</a>
-    <a href="reinforcementlearning.html">Reinforcement Learning</a>
+    <a href="deeplearning.html">Deep Learning</a>
+    <a href="reinforcementlearning.html" class="active">Reinforcement Learning</a>
     <a href="visualizations.html">Visualizations</a>
   </div>
 
-  <h1>Deep Learning</h1>
-  <p>
-    Our CS182 final report, "Riding the Polar Express to Convergence," studies Muon optimizers for GPT-2 Small,
-    comparing Polar Express and Newton-Schulz variants and showing how deployment scope (full vs VO/FFN) and
-    hyperparameters affect stability, learning-rate ranges, and loss. Read the paper
-    <a href="assets/CS182FinalReport.pdf">here</a>. 
+  <h1>Reinforcement Learning</h1>
+
+  <h2>Block Blast</h2>
+  <p align="center">
+    <img src="assets/blockblast.png" alt="Block Blast" width="70%" />
   </p>
   <p>
-    Separate deep learning course work lives on
-    <a href="https://github.com/jaizunT/deep_learning" target="_blank" rel="noopener">GitHub</a>.
+    Block Blast is a grid-based puzzle game where you drag and place block pieces to complete full rows or columns.
+    Each clear scores points and opens space for new pieces, so planning ahead and preserving board flexibility is key.
+    The challenge ramps as awkward shapes appear, forcing you to balance immediate clears with long-term survival.
   </p>
-  
+
+  <h2>In Progress: Reinforcement Learning Agent</h2>
+  <p>
+    I'm currently developing a reinforcement learning agent to learn how to play Block Blast. The goal is to train a
+    policy that selects placements based on board state, maximizing long-term score by balancing immediate clears with
+    future mobility. I'll be iterating on state representations, reward shaping, and training stability as I refine it.
+  </p>
 </body>
 </html>
