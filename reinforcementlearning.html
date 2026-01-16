@@ -37,6 +37,17 @@
       font-weight: bold;
       cursor: pointer;
     }
+    .external-link {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+    .external-link:hover {
+      text-decoration: underline;
+    }
     a {
       color: #0645ad;
     }
@@ -71,11 +82,29 @@
     The challenge ramps as awkward shapes appear, forcing you to balance immediate clears with long-term survival.
   </p>
 
-  <h2>In Progress: Reinforcement Learning Agent</h2>
+  <h2>Block Blast RL Agent</h2>
   <p>
-    I'm currently developing a reinforcement learning agent to learn how to play Block Blast. The goal is to train a
-    policy that selects placements based on board state, maximizing long-term score by balancing immediate clears with
-    future mobility. I'll be iterating on state representations, reward shaping, and training stability as I refine it.
+    <a href="https://github.com/jaizunT/blockblastRL" target="_blank" rel="noopener" class="external-link">
+      View on GitHub ↗
+    </a>
   </p>
+  <p align="center">
+    <img src="assets/blockblast_rl_img.png" alt="Block Blast RL Agent" width="70%" />
+  </p>
+  <p>
+    This project builds an automated Block Blast environment using macOS iPhone Mirroring. I calibrate tray pickup
+    points, board coordinates, and class-specific drag transforms, then capture game state from screenshots.
+  </p>
+  <ul>
+    <li>Board state: sample each cell center and compare RGB differences across the cell block.</li>
+    <li>Tray state: screenshot each tray, compute a bounding box, then compare cell colors against the background.</li>
+    <li>Combo state: detect the purple heart overlay near the score via pixel value checks.</li>
+    <li>Score: run OCR on a fixed score region.</li>
+    <li>Action masking: block invalid placements before stepping.</li>
+    <li>Loss detection: pixel checks plus a valid-move scan, then auto-restart on loss.</li>
+    <li>Rewards: favor lines cleared, combos gained, combo count, and score gains; penalize combo loss or game over.</li>
+    <li>RL setup: Gym-style actions select tray + target cell; PPO (stable-baselines3) trains on a multi-input
+      observation with the board grid, padded tray tensors, and recent move/line/combo signals.</li>
+  </ul>
 </body>
 </html>
