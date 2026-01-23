@@ -92,18 +92,19 @@
   <p align="center">
     <img src="assets/blockblast_rl_img.png" alt="Block Blast RL Agent" width="70%" />
   </p>
+
+  <p align="center">
+    <video width="70%" controls>
+      <source src="assets/blockblast_vid.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </p>
+  
   <p>
     This project builds an automated Block Blast environment using macOS iPhone Mirroring. I calibrate tray pickup
     points, board coordinates, and class-specific drag transforms, then capture game state from screenshots.
   </p>
 
-  <p align="center">
-    <video width="70%" controls>
-      <source src="assets/blockblast_vid.mov" type="video/mov" />
-      Your browser does not support the video tag.
-    </video>
-  </p>
-  
   <ul>
     <li>Board state: sample each cell center and compare RGB differences across the cell block.</li>
     <li>Tray state: screenshot each tray, compute a bounding box, then compare cell colors against the background.</li>
