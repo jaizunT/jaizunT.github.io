@@ -116,5 +116,15 @@
     <li>RL setup: Gym-style actions select tray + target cell; PPO (stable-baselines3) trains on a multi-input
       observation with the board grid, padded tray tensors, and recent move/line/combo signals.</li>
   </ul>
+  <h3>Simulation</h3>
+  <ul>
+    <li><code>BlockBlastSim</code> simulates the 8x8 grid and regenerates batches after 3 placements.</li>
+    <li>Batches are sampled from the block generator weights and re-rolled until solvable.</li>
+    <li>Combo logic is line-based: clearing within 3 moves increments a line streak; combo starts once the streak reaches 3 lines.</li>
+    <li>Optional cluttered starts: <code>generate_clutterered_board(min_clutter=0.4)</code> builds a random board by growing blocks (size ~ N(3, 2.5)) until a target clutter fraction is reached.</li>
+    <li>Set <code>clutter_prob</code> (and <code>min_clutter</code>) in <code>BlockBlastSim(...)</code> to start from a cluttered board on reset with probability p; otherwise resets to empty.</li>
+    <li>Rewards mirror the live agent heuristic: <code>score_increase/1000</code>, <code>lines_cleared**1.5</code>, combo bonuses, step bonus, clutter penalty (thresholded), and delta-holes bonus.</li>
+    <li>Invalid moves return -5.0; terminal loss returns -7.5.</li>
+  </ul>
 </body>
 </html>
