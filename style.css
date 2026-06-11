@@ -132,6 +132,14 @@ a:hover {
   grid-template-columns: 1fr;
 }
 
+.profile-facts {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
 .meta-list li,
 .course-highlight {
   padding: 0;
