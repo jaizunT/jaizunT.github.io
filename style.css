@@ -123,7 +123,7 @@ a:hover {
 .meta-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 12px;
+  gap: 8px;
   padding: 0;
   list-style: none;
 }
@@ -135,10 +135,10 @@ a:hover {
 .meta-list li,
 .work-item,
 .course-highlight {
-  padding: 16px;
-  border: 1px solid var(--rule);
-  border-radius: 10px;
-  background: var(--panel);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 strong {
@@ -154,7 +154,7 @@ strong {
 .course-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 14px;
+  gap: 18px 28px;
 }
 
 .work-item h3,
