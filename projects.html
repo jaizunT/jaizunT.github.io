@@ -64,7 +64,7 @@
       font-family: monospace;
     }
   </style>
-  <link rel="stylesheet" href="style.css?v=light-20260611">
+  <link rel="stylesheet" href="style.css?v=layout-20260611">
 </head>
 <body>
   <h1>Jason Trinh</h1>
@@ -72,8 +72,6 @@
     <a href="index.html">Home</a>
     <a href="projects.html" class="active">Projects</a>
     <a href="grades.html">Grades</a>
-    <a href="deeplearning.html">Deep Learning</a>
-    <a href="reinforcementlearning.html">Reinforcement Learning</a>
     <a href="visualizations.html">Visualizations</a>
   </div>
 
@@ -81,6 +79,32 @@
     <h1>Projects</h1>
 
     <p><a href="https://github.com/jaizunT" target="_blank" rel="noopener">View more projects on GitHub</a></p>
+
+    <!-- Block Blast RL -->
+    <h2>Block Blast RL Agent</h2>
+    <p>
+      <a href="https://github.com/jaizunT/blockblastRL" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
+    <p align="center">
+      <img src="assets/blockblast_rl_img.png" alt="Block Blast RL Agent" width="70%" />
+    </p>
+    <p align="center">
+      <video width="70%" controls>
+        <source src="assets/blockblast_video-cropped.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </p>
+    <p>
+      Block Blast RL builds an automated Block Blast environment using macOS iPhone Mirroring. It calibrates tray
+      pickup points, board coordinates, and class-specific drag transforms, then captures the 8x8 board, tray pieces,
+      combo state, and score from screenshots.
+    </p>
+    <ul>
+      <li>Gym-style actions select a tray piece and target cell.</li>
+      <li>PPO trains on board state, padded tray tensors, and recent move/line/combo signals.</li>
+      <li>Action masking prevents invalid placements before stepping.</li>
+      <li>Rewards favor lines cleared, combos, combo count, and score gains while penalizing combo loss and game over.</li>
+    </ul>
 
     <!-- AI Multiverse -->
     <h2>AI Multiverse - Voice-Driven 3D AI Multiplayer Sandbox</h2>
