@@ -120,6 +120,10 @@ a:hover {
   margin-top: 0;
 }
 
+.home-intro .lede {
+  margin-top: 0;
+}
+
 .meta-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
