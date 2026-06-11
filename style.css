@@ -133,12 +133,18 @@ a:hover {
 }
 
 .meta-list li,
-.work-item,
 .course-highlight {
   padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
+}
+
+.work-item {
+  padding: 16px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--panel);
 }
 
 strong {
