@@ -71,54 +71,76 @@
       font-weight: 600;
     }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Jason Trinh</h1>
   <div class="nav">
     <a href="index.html" class="active">Home</a>
     <a href="projects.html">Projects</a>
+    <a href="grades.html">Grades</a>
     <a href="deeplearning.html">Deep Learning</a>
     <a href="reinforcementlearning.html">Reinforcement Learning</a>
-    <a href="opensource.html">Open Source</a>
     <a href="visualizations.html">Visualizations</a>
   </div>
   <h1>Home</h1>
-  <p align="left">
-    <a href="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/assets/pic.jpg" target="_blank">
-      <img src="https://raw.githubusercontent.com/jaizunT/jaizunT.github.io/main/assets/pic.jpg" alt="Jason Trinh" width="100%" />
-    </a>
+  <p class="lede">
+    I'm an EECS student at UC Berkeley interested in machine learning, systems, optimization, and probability.
+    I like building practical systems where theory meets engineering constraints.
   </p>
-  <h2>About Me</h2>
+
   <p>
-    I'm a student at the University of California, Berkeley, majoring in Electrical Engineering and Computer Sciences (EECS). I'm passionate about a broad range of fields across computing and applied mathematics—including machine learning, computer architecture, optimization, and probability. I enjoy building systems, solving technical challenges, and exploring how theory connects with real-world engineering.
+    <img class="profile-photo" src="assets/pic.jpg" alt="Jason Trinh" />
   </p>
-  <ul>
-    <li><strong>Education:</strong> University of California, Berkeley</li>
-    <li><strong>Major:</strong> Electrical Engineering and Computer Science (EECS)</li>
-    <li><strong>Grade:</strong> 4.0</li>
-    <li><strong>Interested in:</strong> Machine learning, computer architecture, optimization, and probability</li>
-    <li><strong>How to reach me:</strong> <a href="mailto:jasontrinh@berkeley.edu">jasontrinh@berkeley.edu</a></li>
+
+  <h2>At a Glance</h2>
+  <ul class="meta-list">
+    <li><strong>University:</strong> UC Berkeley</li>
+    <li><strong>Major:</strong> Electrical Engineering and Computer Sciences</li>
+    <li><strong>GPA:</strong> 4.0</li>
+    <li><strong>Email:</strong> <a href="mailto:jasontrinh@berkeley.edu">jasontrinh@berkeley.edu</a></li>
   </ul>
 
-  <h2>Coursework (UC Berkeley)</h2>
-  <table>
-    <tr><th>Course Code</th><th>Course Name</th><th>Grade</th></tr>
-    <tr><td>EECS 16A</td><td>Designing Information Devices and Systems I</td><td>A</td></tr>
-    <tr><td>CS 61A</td><td>The Structure and Interpretation of Computer Programs</td><td>A</td></tr>
-    <tr><td>CS 61B</td><td>Data Structures</td><td>A</td></tr>
-    <tr><td>CS 70</td><td>Discrete Mathematics and Probability Theory</td><td>A+</td></tr>
-    <tr><td>EECS 126</td><td>Probability and Random Processes</td><td>A</td></tr>
-    <tr><td>EECS 127/227A</td><td>Optimization Models in Engineering</td><td>A</td></tr>
-    <tr><td>CS 61C</td><td>Great Ideas in Computer Architecture (Machine Structures)</td><td>A+</td></tr>
-    <tr><td>EE 120</td><td>Signals and Systems</td><td>A</td></tr>
-    <tr><td>MATH 110</td><td>Abstract Linear Algebra</td><td>A</td></tr>
-    <tr><td>EECS 16B</td><td>Designing Information Devices and Systems II</td><td>A+</td></tr>
-    <tr><td>CS 182/282A</td><td>Designing, Visualizing, and Understanding Deep Neural Networks</td><td>A+</td></tr>
-    <tr><td>CS 185/285</td><td>Deep Reinforcement Learning, Decision Making, and Control</td><td>A</td></tr>
-    <tr><td>EE 227BT</td><td>Convex Optimization</td><td>A</td></tr>
-    <tr><td>EE 194/294 16</td><td>Scalable AI: Bridging Theory, Understanding, and Practice</td><td>A+</td></tr>
-    <tr><td>CS 189/289A</td><td>Introduction to Machine Learning</td><td>A</td></tr>
-  </table>
+  <h2>Important Courses</h2>
+  <div class="course-grid">
+    <div class="course-highlight">
+      <h3>Deep Learning</h3>
+      <p>CS 182/282A, Designing, Visualizing, and Understanding Deep Neural Networks. Grade: A+.</p>
+    </div>
+    <div class="course-highlight">
+      <h3>Convex Optimization</h3>
+      <p>EE 227BT, graduate convex optimization. Grade: A.</p>
+    </div>
+    <div class="course-highlight">
+      <h3>Reinforcement Learning</h3>
+      <p>CS 185/285, Deep Reinforcement Learning, Decision Making, and Control. Grade: A.</p>
+    </div>
+  </div>
+  <p><a href="grades.html">View full grades</a></p>
+
+  <h2>Selected Work</h2>
+  <div class="selected-work">
+    <div class="work-item">
+      <h3>EchoKV</h3>
+      <p>
+        A final project on adaptive per-layer KV-cache precision for large language model serving.
+      </p>
+      <div class="link-row">
+        <a href="echokv.html">Project page</a>
+        <a href="assets/185_Final_Project.pdf">PDF</a>
+      </div>
+    </div>
+    <div class="work-item">
+      <h3>Deep Learning: Riding the Polar Express to Convergence</h3>
+      <p>
+        A CS182 final report studying Muon optimizers for GPT-2 Small.
+      </p>
+      <div class="link-row">
+        <a href="deeplearning.html">Project page</a>
+        <a href="assets/CS182FinalReport.pdf">PDF</a>
+      </div>
+    </div>
+  </div>
 
   <h2>Connect with Me</h2>
   <p><a href="https://www.linkedin.com/in/jason-trinh-4590a8315">LinkedIn Profile</a></p>
