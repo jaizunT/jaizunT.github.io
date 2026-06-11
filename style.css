@@ -235,6 +235,19 @@ embed {
   background: #000000;
 }
 
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.image-row img {
+  width: 100%;
+  display: block;
+}
+
 .theory-section {
   background: var(--panel);
   border-color: var(--rule);
@@ -285,5 +298,9 @@ embed {
 
   .profile-photo {
     max-width: 340px;
+  }
+
+  .image-row {
+    grid-template-columns: 1fr;
   }
 }
