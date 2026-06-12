@@ -33,17 +33,13 @@ h3 {
 
 h1 {
   margin: 0 0 16px;
-  font-size: 2rem;
+  font-size: 2.25rem;
   letter-spacing: 0;
 }
 
 body > h1:first-of-type {
   margin-bottom: 14px;
   font-size: 1.8rem;
-}
-
-.nav + h1 {
-  font-size: 2.25rem;
 }
 
 h2 {
@@ -299,10 +295,6 @@ embed {
 @media (max-width: 640px) {
   body {
     padding: 24px 16px 44px;
-  }
-
-  h1 {
-    font-size: 2.35rem;
   }
 
   .nav {
