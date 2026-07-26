@@ -202,6 +202,14 @@ strong {
   margin-top: 12px;
 }
 
+.link-column {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
